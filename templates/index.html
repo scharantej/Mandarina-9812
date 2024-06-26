@@ -1,0 +1,10 @@
+
+<h1>Learn Mandarin with Images</h1>
+
+<ul>
+{% for lesson_name, lesson in LESSONS.items() %}
+<li><a href="/lessons/{{ lesson_name }}">{{ lesson['title'] }}</a></li>
+{% endfor %}
+</ul>
+
+
